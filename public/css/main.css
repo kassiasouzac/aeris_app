@@ -1,0 +1,319 @@
+.section{
+   
+    position: absolute;
+   width: 100%;
+    height: 3067px;
+    background: linear-gradient(180deg, #EDEDED 0%, rgba(237, 237, 237, 0) 100%);
+    border-radius: 92px;
+    }
+
+    .img-logo{
+    position: absolute;
+    width: 176px;
+    height: 150px;
+    left: 318px;
+    top: 213px;
+
+}
+
+.title{
+    position: absolute;
+width: 369px;
+height: 48px;
+left: 241px;
+top: 401px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 48px;
+line-height: 65px;
+text-align: center;
+letter-spacing: -0.02em;
+}
+
+.title:hover{
+    background-color: #565656;
+    color: transparent;
+    text-shadow: 0px 2px 3px rgba(255,255,255,0.5);
+    -webkit-background-clip: text;
+       -moz-background-clip: text;
+            background-clip: text;
+}
+
+.subtitle{
+    position: absolute;
+    width: 456px;
+    height: 109px;
+    left: 182px;
+    top: 490px;
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #022069;
+}
+
+
+.is-medium{
+transition: all 0.5s;
+cursor: pointer;
+position: absolute;
+width: 295px;
+height: 82px;
+left: 259px;
+top: 598px;
+background: #E7720B;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+filter: blur(px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 37px;
+
+}
+
+.is-medium:hover{
+    
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(226, 117, 28, 0.66));
+    filter: drop-shadow(15px 10px 5px rgba(226, 117, 28, 0.66));
+    
+}
+
+.img--sublogo{  
+width: 617px;
+height: 479px;
+left: 681px;
+top: 166px;
+}
+
+.img-social{
+    position: absolute;
+  
+    left: 1028px;
+    top: 320px;
+    
+}
+
+.title-about{
+    position: absolute;
+width: 369px;
+height: 48px;
+left: 543px;
+top: 834px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 48px;
+line-height: 65px;
+text-align: justify;
+letter-spacing: -0.02em;
+color: #022069;
+}
+
+.subtitle-about{
+    position: absolute;
+width: 877px;
+height: 109px;
+left: 243px;
+top: 944px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 33px;
+text-align: center;
+letter-spacing: -0.02em;
+
+color: #022069;
+}
+
+.img-about{  
+position: absolute;
+width: 1080px;
+height: 1080px;
+left: 222px;
+top: 1091px;
+}
+
+.section-about{
+    position: absolute;
+    width: 1197px;
+    height: 654px;
+    left: 117px;
+    top: 1670px;
+    
+    background: linear-gradient(179.96deg, rgba(252, 245, 235, 0.8) 1.67%, rgba(255, 255, 255, 0) 99.97%);
+    backdrop-filter: blur(50px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 37px;
+}
+
+
+.title-moment{
+    width: 200px;
+    height: 48px;
+    left: 836px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 49px;
+  
+ 
+
+color: #FF7300;  
+}
+
+.subtitle-momento{
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    left: 646px;
+ 
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: justify;
+    letter-spacing: -0.02em;
+    
+    color: #022069; 
+}
+
+.container-form{
+    position: absolute;
+width: 1197px;
+height: 613px;
+left: 105px;
+top: 2900px;
+
+background: linear-gradient(179.96deg, rgba(255, 255, 255, 0) 0.03%, #FCF5EB 99.97%);
+backdrop-filter: blur(50px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 37px;
+}
+
+.div-form{
+position: absolute;
+width: 400px;
+height: 700px;
+left: 857px;
+top: 2700px;
+
+background: rgba(255, 255, 255, 0.86);
+border: 1px solid rgba(0, 0, 0, 0.2);
+box-sizing: border-box;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 29px;
+}
+
+.input-name{
+    position: absolute;
+    width: 312px;
+    height: 54px;
+    left: 20px;
+    top: 100px;
+    
+    background: #FBF5EC;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    backdrop-filter: blur(20px);
+    /* Note: backdrop-filter has minimal browser support */
+    
+    border-radius: 21px;  
+}
+.input-name-empresa{
+    position: absolute;
+    width: 312px;
+    height: 54px;
+    left: 20px;
+    top: 40px;
+    
+    background: #FBF5EC;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    backdrop-filter: blur(20px);
+    /* Note: backdrop-filter has minimal browser support */
+    
+    border-radius: 21px;  
+}
+.input-email{
+    position: absolute;
+    width: 312px;
+    height: 54px;
+    left: 20px;
+    top: 165px;
+    
+    background: #FBF5EC;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    backdrop-filter: blur(20px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 21px;  
+}
+.input-password{
+    position: absolute;
+    width: 312px;
+    height: 54px;
+    left: 20px;
+    top: 225px;
+    
+    background: #FBF5EC;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    backdrop-filter: blur(20px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 21px;  
+}
+.input-confirm-password{
+    position: absolute;
+    width: 312px;
+    height: 54px;
+    left: 20px;
+    top: 290px;
+    
+    background: #FBF5EC;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    backdrop-filter: blur(20px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 21px;  
+}
+
+.textarea{
+    top: 360px; 
+    background: #FBF5EC;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    backdrop-filter: blur(20px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 21px;  
+}
+.is-normal{
+  top: 370px;
+}
+.checkbox{
+    top: 380px;
+}
+.input-tel{
+    position: absolute;
+    width: 312px;
+    height: 54px;
+    left: 20px;
+    top: 290px;
+    
+    background: #FBF5EC;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    backdrop-filter: blur(20px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 21px;      
+}
