@@ -5,29 +5,15 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use App\Models\PedidoConsultoria;
-use Illuminate\Support\Facades\Validator;
+use App\Models\User;
+use Illuminate\Foundation\Auth\RegistersUsers;
 
 class PedidoConsultoriaController extends Controller
 {
-
-
-    /**
-     * Get a validator for an incoming registration request.
-     *
-     * @param  array  $data
-     * @return \Illuminate\Contracts\Validation\Validator
-     */
-
-
-    public function pedidoConsultoria()
-    {
-        return view('index');
-    }
-
+    //use RegistersUsers;
     /**
      * Create a new user instance after a valid registration.
      *
-     * @param  array  $data
      * @return \App\Models\PedidoConsultoria
      */
     public function salvar(Request $request)
@@ -62,7 +48,13 @@ class PedidoConsultoriaController extends Controller
             'statusPedido' => $statusPedido,
             'checkCurso' => $checkCurso,
         ]);
-        return redirect()->route('index');
+        User::create([
+            'name' => $request->input('nome'),
+            'email' => $request->input('email'),
+            'password' => $hashed,
+            'is_admin' => 0,
+        ]);
+        return redirect()->route('verification.notice');
     }
     
 }

@@ -15,10 +15,9 @@ use Illuminate\Support\Facades\Auth;
 */
 
 Route::get('/', [App\Http\Controllers\PrincipalController::class, 'principal'],)->name('index');
-//Route::get('/', [App\Http\Controllers\PedidoConsultoriaController::class,'pedidoConsultoria'])->name('site.pedido');
 Route::post('/', [App\Http\Controllers\PedidoConsultoriaController::class,'salvar'])->name('site.pedido');
-//Route::get('/login', function(){return 'Login';})->name('site.login');
+Route::get('admin/home', [App\Http\Controllers\HomeController::class, 'adminHome'])->name('admin.home')->middleware('is_admin','verified');
 
 Auth::routes(['verify'=> true]);
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home')->middleware('verified');
