@@ -4,92 +4,125 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hello Bulma!</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-</head>
-<link rel="stylesheet" href="./css/main.css">
+  <title>Aeris</title>
+  <!-- ==================================================================================== -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <!-- ==================================================================================== -->    
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- ==================================================================================== -->
 
 
 <title>index</title>
 
 <body>
-  <!-- particles.js container -->
-  <div cas="container"></div> <!-- stats - count particles -->
+  <div id="background-sections">
 
-  <div class="container">
-    <section class="section">
-      <div class="columns">
-        <div class="column column-1">
-          <img src="./img/logo.png" class="img-logo">
-          <h1 class="title title">Projeto Aeris</h1>
-          <h2 class="subtitle">Venha fazer a consultoria do seu negócio conosco.</h2>
-          <button class="button is-medium">CADASTRE-SE</button>
-        </div>
-
-        <div class="column column-2">
-          <img src="./img/img-header.png" class="img-sublogo">
-          <img src="./img/img-social.png" class="img-social">
+    <!--section initial-->
+      <div class="container class-initial">
+        <div class="row">
+          <div class="col col-center">
+            <img src="./img/logo.png" alt="Logo Aeris">
+            <h1 class="title-initial">Projeto Aeris</h1> 
+            <h3 class="subtitle-initial">Venha fazer a consultoria do seu negócio conosco.</h3>
+            <a href="#form-registrar"><button class="btn btn-dark">Cadastre-se</button></a> <!-- colocar o id do form no href-->
+          </div>
+          <div class="col col-center">
+            <img src="./img/initial.png" alt="Vetor Homem no Computador">
+          </div>
         </div>
       </div>
-    </section>
 
-    <section>
-      <h1 class="title title-about">Sobre o Aeris</h1>
-      <h2 class="subtitle subtitle-about">O objetivo do Projeto Aeris é fornecer formação rápida, prática e gratuita para os alunos e colaboradores que decidiram empreender no cenário atual.</h2>
-      <img src="./img/img-about.png" class="img-about">
-    </section>
-
-    <section class="section-about">
-      <div class="columns">
-        <div class="column">
-          <img src="./img/img-ideia.png" class="img-ideia">
-        </div>
-
-        <div class="column">
-          <h1 class="title title-moment">Momento</h1>
-          <h2 class="subtitle subtitle-momento">A crise decorrente da pandemia de Covid-19 é um fato indiscutível e afeta de forma geral a nossa sociedade. Além das questões relacionadas à saúde, a área econômica sente diretamente todos os efeitos negativos do momento. Sob essa perspectiva e pensando em uma maneira de incrementar a formação dos alunos de todas as unidades do Projeção, com a celeridade que o momento pede, as professoras Élida Borges, coordenadora da Agência Experimental Galo Canta e Tatiana Reis, coordenadora da Consultoria Junior Inove, criaram o Projeto Aeris. Com o apoio de setores fundamentais da instituição, como o NEX e o NEAD, o Projeto, que visa o incentivo ao empreendedorismo de maneira correta, já está em andamento e se encontra em fase de inscrições..</h2>
+    <!--section about-->
+      <div class="container container-style class-about">
+        <div class="row">
+          <div class="col col-center">
+            <img src="./img/img-about.png" alt="Placeholder image">
+          </div>
+          <div class="col col-center">
+            <span class="span-all">SOBRE</span>
+            <h2 class="subtitle-about">
+              O objetivo do Projeto Aeris é fornecer formação rápida, prática e gratuita para os alunos e colaboradores que
+              decidiram empreender no cenário atual.
+            </h2>
+          </div>
         </div>
       </div>
-    </section>
-
-    <div class="container container-form">
-
-    </div>
-
-    <div class="columns">
-      <div class="column">
-       
-      </div>
-      <div class="column">
-        @php
-         $curso = (bool) rand(0, 1) ? "checked" : null;   
-        @endphp
-
-        <div class="div-form">
-        <form action="{{ route('site.pedido') }}" method="post" >
-        @csrf
-        <input name="nome" value="{{ old('nome') }}" class="input input-name" type="text" placeholder="Nome Completo"> 
-            <input name="email" value="{{ old('email') }}" class="input input-email" type="email" placeholder="E-mail">
-            <input name="senha" value="{{ old('senha') }}" class="input input-password" type="password" placeholder="Senha">
-            <input name="confirmaSenha" value="{{ old('confirmaSenha') }}" class="input input-confirm-password" type="password" placeholder="Confirmar senha">
-            <input name="telefone" value="{{ old('telefone') }}" class="input input-tel" type="text" placeholder="Telefone">
-            <input name="nomeEmpresa" value="{{ old('nomeEmpresa') }}" class="input input-name-empresa" type="text" placeholder="Nome da Empresa">
-            <textarea name="descricao" value="{{ old('descricao') }}" class="textarea" placeholder="Fale um pouco sobre seu negócio"
-            >@if (old('descricao') != ''){{old('descricao')}} @endif</textarea>
-            <button class="button is-normal">Enviar</button>
-            <label class="checkbox">
-                <input name="checkCurso" type="checkbox" value=1  @if (old('checkCurso') == 1) {{ old('checkCurso')  }} @endif >
-                Já participei do curso de extensão do Aeris.
-            </label>
-        </form>
+    
+    <!--section moment-->
+      <div class="container container-style">
+        <div class="row">
+          <div class="col col-center">
+            <img src="./img/img-moment.png" alt="Placeholder image">
+          </div>
+          <div class="col col-center">
+            <span class="span-all">MOMENTO</span>
+            <h2 class="subtitle-all">
+              A crise decorrente da pandemia de Covid-19 é um fato indiscutível e afeta de forma geral a nossa sociedade. Além das questões relacionadas à saúde, a área econômica sente diretamente todos os efeitos negativos do momento. Sob essa perspectiva e pensando em uma maneira de incrementar a formação dos alunos de todas as unidades do Projeção, com a celeridade que o momento pede, as professoras Élida Borges, coordenadora da Agência Experimental Galo Canta e Tatiana Reis, coordenadora da Consultoria Junior Inove, criaram o Projeto Aeris. Com o apoio de setores fundamentais da instituição, como o NEX e o NEAD, o Projeto, que visa o incentivo ao empreendedorismo de maneira correta, já está em andamento e se encontra em fase de inscrições.
+            </h2>
+          </div>
         </div>
       </div>
-    </div>
-  <div style="position: absolute; top:0px; left:0px; width:100%;">
-    <pre>
-      {{ print_r($errors) }}
-    </pre>
+
+    <!--section form-->
+    <div class="container container-style">
+      <div class="row">
+        <div class="col col-center">
+          <span class="span-form">COMO PARTICIPAR</span>
+          <img id="img-form" src="./img/img-form.png" alt="Placeholder image">
+          <h2 class="subtitle-all">
+            Os participantes do projeto terão acesso gratuitamente a um programa de treinamento intensivo para
+            alavancar seus negócios em três fases: mini-cursos práticos na plataforma AVA, mentoria com acompanhamento
+            personalizado e divulgação de seus produtos e serviços através da Rede Aeris, que irá providenciar
+            encartes voltados para a região em que o negócio se encontra, considerando que serão divulgados para toda
+            a comunidade Projeção. Para participar, basta que o aluno preencha o formulário de cadastro ao lado e
+            aguarde por maiores instruções.
+          </h2>
+        </div>
+        <div class="col col-center-form col-style-form">
+          <form action="{{ route('site.pedido') }}" method="post" id="form-registrar">
+            @csrf
+            <p class="title-form">Cadastre-se</p>
+            <div class="col-12 mb-3">
+              <input type="text" name="nome" value="{{ old('nome') }}" class="form-control" id="nome-completo" placeholder="Nome Completo" required>
+            </div>
+            <div class="col-12 mb-3">
+              <input type="text" name="nomeEmpresa" value="{{ old('nomeEmpresa') }}" class="form-control" id="nome-empresa" placeholder="Nome da empresa" required>
+            </div>
+            <div class="col-12 mb-3">
+              <input type="email" name="email" value="{{ old('email') }}" class="form-control" id="email" aria-describedby="emailHelp" placeholder="E-mail" required>
+            </div>
+            <div class="row">
+              <div class="col-6 mb-3">
+                <input type="password" name="senha" value="{{ old('senha') }}" class="form-control" id="senha" placeholder="Senha" required>
+              </div>
+              <div class="col-6 mb-3">
+                <input type="password" name="confirmaSenha" value="{{ old('confirmaSenha') }}" class="form-control" id="senha" placeholder="Confirmar Senha" required>
+              </div>
+            </div>
+            <div class="col-12 mb-3">
+              <input type="text" name="telefone" value="{{ old('telefone') }}"  class="form-control" id="telefone" placeholder="Telefone" required>
+            </div>
+            <div class="col-12 mb-3">
+              <textarea name="descricao" value="{{ old('descricao') }}" class="form-control" id="descricao-negocio" placeholder="Descrição do negócio" rows="3">@if (old('descricao') != ''){{old('descricao')}} @endif</textarea>
+            </div>
+            <div class="col-12 mb-3">
+              <input class="form-check-input" type="checkbox" value="" id="participacao" required value=1  @if (old('checkCurso') == 1) {{ old('checkCurso')  }} @endif >
+              <label class="form-check-label" for="participacao">
+                Já participou de algum curso do Aeris ?
+              </label>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Registrar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>  
+
+    <!-- FOOTER -->
+
+    
+   
   </div>
 </body>
-
 </html>
